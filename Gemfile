@@ -1,0 +1,55 @@
+source 'https://rubygems.org'
+
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '4.0.0'
+
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 4.0.0'
+
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '>= 1.3.0'
+
+# Use CoffeeScript for .js.coffee assets and views
+gem 'coffee-rails'
+# See https://github.com/sstephenson/execjs#readme for more supported runtimes
+# gem 'therubyracer', platforms: :ruby
+
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
+
+# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+gem 'turbolinks'
+
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder', '~> 1.2'
+
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
+end
+
+group :development, :test do
+	gem 'capybara', :git => 'git://github.com/jnicklas/capybara.git'
+	gem 'factory_girl_rails'
+	gem 'guard-rspec'	# auto run test when files are changed
+	gem 'pry'
+	gem 'pry-rails'
+	gem 'rspec-rails'
+	gem 'rspec', '~> 2.14.1'
+	gem 'vcr', '2.2.5' # testing http request
+	gem 'fakeweb' #testing http request
+end
+
+gem 'simple_form'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'pry', :group => :development
+gem 'pry-rails', :group => :development
+gem 'devise'
+gem 'cancan'
+gem 'newrelic_rpm'
+gem 'pg'
+gem 'therubyracer'
+
+gem 'bootstrap-sass'
+gem 'twitter-bootswatch-rails', :git => 'git://github.com/scottvrosenthal/twitter-bootswatch-rails.git'

@@ -1,0 +1,21 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: gemmaker_development
+  pool: 5
+  username: admin
+  password: admin
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: gemmamker_test
+  pool: 5
+  username: admin
+  password: admin
+  host: localhost
+
+production:
+  adapter: postgresql
+ 
