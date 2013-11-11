@@ -1,53 +1,47 @@
-<%- model_class = Picture -%>
-<div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+<%= link_to "New picture",
+            new_picture_path,
+            :class => 'btn btn-primary' %>
+<br />
+<br />
+<div class="row">
+  <% @pictures.each do |picture| %>
+    <div class="col-sm-6 col-md-6">
+      <div class="thumbnail">
+        <h3 ><%= picture.title %> <small>(<%= picture.added %>)</small></h3>
+        <%= image_tag(picture.image.thumb)%>
+        <div class="caption">
+          
+        <br />
+        <br />
+        <div class="form-group">
+          <div class="col-lg-12 col-lg-offset-2">
+            <div class="btn-group">
+              <% if can? :edit, picture %>
+                <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                edit_picture_path(picture), :class => 'btn btn-mini btn-danger' %>  
+              <% end %>
+              <% if can? :destroy, picture %>
+                <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                picture_path(picture),
+                :method => 'delete',
+                :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                :class => 'btn btn-primary' %>
+              <% end %>
+              <% if can? :creategem, picture %>
+                <%= link_to "Create gem",
+                        creategem_picture_path(picture),:method=> :put, :class => 'btn btn-mini btn-info' %>
+              <% end %>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
 </div>
 
 
 
-
-
-<div class="container">
-  <div class="row">
-    <ul class="thumbnails">
-      <% @pictures.each do |picture| %>
-      <li class="col-md-4">
-        <div class="thumbnail" style="padding: 0">
-          <div style="padding:4px">
-            <%= image_tag(picture.image.thumb) if picture.image != nil %>
-          </div>
-          <div class="caption">
-            <h2><%= picture.title %></h2>
-            <p><%= picture.added %></p>
-            <p><i class="icon icon-map-marker"></i> Place, Country</p>
-          </div>
-          <div class="modal-footer" style="text-align: left">
-            <div class="progress progress-striped active" style="background: #ddd">
-              <div class="bar" style="width: 60%;"></div>
-            </div>
-              <div class="row">
-                <div class="col-md-4"><%= link_to t('.edit', :default => t("helpers.links.edit")),
-                      edit_picture_path(picture), :class => 'btn btn-mini' %></div>
-                <div class="col-md-4"><%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-                      picture_path(picture),
-                      :method => :delete,
-                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-                      :class => 'btn btn-mini btn-danger' %></div>
-                <div class="col-md-4"><b>18</b><br/><small>DAYS</small></div>
-              </div>
-          </div>
-        </div>
-      </li>
-      <% end %>
-    
-    </ul>
-  </div>
-</div> 
-
-
-<%= link_to t('.new', :default => t("helpers.links.new")),
-            new_picture_path,
-            :class => 'btn btn-primary' %>
 
 
 

@@ -1,13 +1,19 @@
 Gemmaker::Application.routes.draw do
-  resources :pictures
+  devise_for :users
+  resources :pictures do
+    put 'creategem', on: :member
+    post 'newgem'
 
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'pictures#index'
+  root 'pictures#show_gems'
 
-  # Example of regular route:
+  get 'show_gems/:type', to: 'pictures#show_gems', as: 'show_gems'
+  get "/pictures/show/:type", to: "pictures#index", as: "show_pictures"
+
   #   get 'products/:id' => 'catalog#view'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)

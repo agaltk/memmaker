@@ -1,15 +1,18 @@
 class PicturesController < ApplicationController
   before_action :set_picture, only: [:show, :edit, :update, :destroy]
+  require 'RMagick'
+  include Magick
 
   # GET /pictures
   # GET /pictures.json
   def index
-    @pictures = Picture.all
+    @pictures = Picture.show_pictures(params[:type],current_user)
   end
 
   # GET /pictures/1
   # GET /pictures/1.json
   def show
+    
   end
 
   # GET /pictures/new
@@ -25,7 +28,8 @@ class PicturesController < ApplicationController
   # POST /pictures.json
   def create
     @picture = Picture.new(picture_params)
-
+    @picture.user_id = current_user.id
+    @picture.added = Date.today
     respond_to do |format|
       if @picture.save
         format.html { redirect_to @picture, notice: 'Picture was successfully created.' }
@@ -60,6 +64,23 @@ class PicturesController < ApplicationController
       format.json { head :no_content }
     end
   end
+  def creategem
+    @picture = Picture.find(params[:id])
+  end
+
+  def newgem
+    @picture = Picture.find(params[:picture_id])
+    text = params[:newgem][:text]
+    @newgem = @picture.creategem(text)
+  end
+
+  def show_gems
+    @gems = Picturegem.show_gems(params[:type],current_user)  
+  end
+
+
+
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -69,6 +90,6 @@ class PicturesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def picture_params
-      params.require(:picture).permit(:title, :added, :image, :private)
+      params.require(:picture).permit(:title, :added, :image, :private, :text, :font)
     end
 end

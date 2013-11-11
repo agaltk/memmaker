@@ -25,7 +25,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   end
 
   version :thumb do
-    process :resize_to_fill => [240, 180]
+    process :resize_to_fill => [400, 280 ]
   end
 
   version :small do
@@ -35,6 +35,8 @@ class ImageUploader < CarrierWave::Uploader::Base
   def extension_white_list
     %w(jpg jpeg gif png)
   end
+
+  
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url

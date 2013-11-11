@@ -31,18 +31,16 @@ end
 group :development, :test do
 	gem 'capybara', :git => 'git://github.com/jnicklas/capybara.git'
 	gem 'factory_girl_rails'
-	gem 'guard-rspec'	# auto run test when files are changed
 	gem 'pry'
 	gem 'pry-rails'
 	gem 'rspec-rails'
 	gem 'rspec', '~> 2.14.1'
-	gem 'vcr', '2.2.5' # testing http request
-	gem 'fakeweb' #testing http request
 end
 
 gem 'simple_form'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'rmagick'
 gem 'pry', :group => :development
 gem 'pry-rails', :group => :development
 gem 'devise'
@@ -50,6 +48,7 @@ gem 'cancan'
 gem 'newrelic_rpm'
 gem 'pg'
 gem 'therubyracer'
+gem 'bootstrap-addons-rails'
 
 gem 'bootstrap-sass'
 gem 'twitter-bootswatch-rails', :git => 'git://github.com/scottvrosenthal/twitter-bootswatch-rails.git'

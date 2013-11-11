@@ -26,3 +26,7 @@ Provided under the Apache 2.0 License: http://www.apache.org/licenses/LICENSE-2.
 Commercial use requires attribution.
 
 */
+
+jQuery(document).ready(function($) {
+
+        $('#myCarousel').carousel();
