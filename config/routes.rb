@@ -1,7 +1,7 @@
 Gemmaker::Application.routes.draw do
   devise_for :users
   resources :pictures do
-    put 'creategem', on: :member
+    get 'creategem', on: :member
     post 'newgem'
 
   end

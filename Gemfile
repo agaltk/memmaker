@@ -49,6 +49,8 @@ gem 'newrelic_rpm'
 gem 'pg'
 gem 'therubyracer'
 gem 'bootstrap-addons-rails'
+gem 'unicorn'#puma'
+gem 'ruby-jmeter'
 
 gem 'bootstrap-sass'
 gem 'twitter-bootswatch-rails', :git => 'git://github.com/scottvrosenthal/twitter-bootswatch-rails.git'
