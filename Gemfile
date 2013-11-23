@@ -51,6 +51,6 @@ gem 'therubyracer'
 gem 'bootstrap-addons-rails'
 gem 'unicorn'#puma'
 gem 'ruby-jmeter'
-
+gem 'capistrano'
 gem 'bootstrap-sass'
 gem 'twitter-bootswatch-rails', :git => 'git://github.com/scottvrosenthal/twitter-bootswatch-rails.git'
