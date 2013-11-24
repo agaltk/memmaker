@@ -1,17 +1,17 @@
-Gemmaker::Application.routes.draw do
+Memmaker::Application.routes.draw do
   devise_for :users
   resources :pictures do
-    put 'creategem', on: :member
-    post 'newgem'
+    get 'createmem', on: :member
+    post 'newmem'
 
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'pictures#show_gems'
+  root 'pictures#show_mems'
 
-  get 'show_gems/:type', to: 'pictures#show_gems', as: 'show_gems'
+  get 'show_mems/:type', to: 'pictures#show_mems', as: 'show_mems'
   get "/pictures/show/:type", to: "pictures#index", as: "show_pictures"
 
   #   get 'products/:id' => 'catalog#view'

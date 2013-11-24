@@ -1,11 +1,11 @@
 class Picture < ActiveRecord::Base
   mount_uploader :image, ImageUploader
-  has_many :picturegems
+  has_many :picturemems
   belongs_to :user
   scope :not_private, -> { where(private: false) }
 
   
-  def creategem(text='Default text')
+  def createmem(text='Default text')
 
 	  img = self.image.file.file
     font_size = 25
@@ -26,10 +26,10 @@ class Picture < ActiveRecord::Base
     
     img.write('temp.png')
 
-    gemimage = GemimageUploader.new
-    gemimage.cache!(File.open('temp.png'))
-    pg =  Picturegem.create(title: my_text, gemimage: gemimage)
-    self.picturegems << pg
+    memimage = MemimageUploader.new
+    memimage.cache!(File.open('temp.png'))
+    pg =  Picturemem.create(title: my_text, memimage: memimage)
+    self.picturemems << pg
     self.save
     pg
   end

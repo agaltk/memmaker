@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Gemmaker::Application.config.secret_key_base = '3dfb9ae1955cbca4098a014fabb83b04304643d61a942a5ec22b06e2359100c938a4781601c817bc505b23e9fe6de4461b82ff4aa3516d074df3b00bd2c0a799'
+Memmaker::Application.config.secret_key_base = '3dfb9ae1955cbca4098a014fabb83b04304643d61a942a5ec22b06e2359100c938a4781601c817bc505b23e9fe6de4461b82ff4aa3516d074df3b00bd2c0a799'

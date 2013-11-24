@@ -5,9 +5,9 @@ class Ability
 
     unless user 
       can :read, Picture, :private => false
-      can :show_gems, Picture
+      can :show_mems, Picture
     else
-      can [:create, :read,:creategem,:newgem], Picture
+      can [:create, :read,:createmem,:newmem], Picture
       can [:update, :destroy], Picture, :user_id => user.id 
 
     end
