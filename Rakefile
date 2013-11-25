@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Gemmaker::Application.load_tasks
+Memmaker::Application.load_tasks

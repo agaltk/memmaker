@@ -1,4 +1,4 @@
-Gemmaker::Application.configure do
+Memmaker::Application.configure do
   
    config.cache_classes = true
 

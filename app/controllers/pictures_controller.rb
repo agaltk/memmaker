@@ -64,18 +64,18 @@ class PicturesController < ApplicationController
       format.json { head :no_content }
     end
   end
-  def creategem
+  def createmem
     @picture = Picture.find(params[:id])
   end
 
-  def newgem
+  def newmem
     @picture = Picture.find(params[:picture_id])
-    text = params[:newgem][:text]
-    @newgem = @picture.creategem(text)
+    text = params[:newmem][:text]
+    @newmem = @picture.createmem(text)
   end
 
-  def show_gems
-    @gems = Picturegem.show_gems(params[:type],current_user)  
+  def show_mems
+    @mems = Picturemem.show_mems(params[:type],current_user)  
   end
 
 

@@ -1,8 +1,8 @@
-class CreatePicturegems < ActiveRecord::Migration
+class CreatePicturemems < ActiveRecord::Migration
   def change
-    create_table :picturegems do |t|
+    create_table :picturemems do |t|
       t.string :title
-      t.string :gemimage
+      t.string :memimage
       t.references :picture
 
       t.timestamps
