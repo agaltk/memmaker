@@ -27,6 +27,3 @@ Commercial use requires attribution.
 
 */
 
-jQuery(document).ready(function($) {
-
-        $('#myCarousel').carousel();
