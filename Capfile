@@ -1,9 +1,11 @@
-
+<
 load 'deploy'
 # Uncomment if you are using Rails' asset pipeline
     # load 'deploy/assets'
 load 'config/deploy' # remove this line to skip loading any of the default tasks
 
+# Includes default deployment tasks
+require 'capistrano/deploy'
 
 # Includes tasks from other gems included in your Gemfile
 #
