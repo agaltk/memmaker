@@ -24,4 +24,3 @@ production:
   username: admin
   password: admin
   host: localhost
- 

@@ -5,7 +5,10 @@ gem 'rails', '4.0.0'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
-
+gem 'twitter-bootswatch-rails', '3.0.0'
+gem 'twitter-bootswatch-rails-helpers', '3.0.0'
+gem 'bootstrap-sass'
+gem 'bootstrap-addons-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
@@ -48,11 +51,8 @@ gem 'cancan'
 gem 'newrelic_rpm'
 gem 'pg'
 gem 'therubyracer'
-gem 'bootstrap-addons-rails'
 gem 'unicorn'#puma'
 gem 'ruby-jmeter'
-gem  'capistrano', '~> 2.15.5'
+gem 'capistrano', '~> 2.15.5'
 gem 'rvm-capistrano'
 gem 'sidekiq'
-gem 'bootstrap-sass'
-gem 'twitter-bootswatch-rails', :git => 'git://github.com/scottvrosenthal/twitter-bootswatch-rails.git'

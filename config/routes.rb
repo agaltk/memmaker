@@ -1,7 +1,6 @@
 Memmaker::Application.routes.draw do
   devise_for :users
   resources :pictures do
-
     get 'createmem', on: :member
     post 'newmem'
   end

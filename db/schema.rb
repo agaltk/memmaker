@@ -13,9 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20131104162813) do
 
-  create_table "picturegems", force: true do |t|
+  create_table "picturemems", force: true do |t|
     t.string   "title"
-    t.string   "gemimage"
+    t.string   "memimage"
     t.integer  "picture_id"
     t.datetime "created_at"
     t.datetime "updated_at"
