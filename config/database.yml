@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: gemmaker_development
+  database: mem_development
   pool: 5
   username: admin
   password: admin
@@ -10,7 +10,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: gemmamker_test
+  database: mem_test
   pool: 5
   username: admin
   password: admin
@@ -18,4 +18,9 @@ test:
 
 production:
   adapter: postgresql
- 
+  encoding: unicode
+  database: mem_production
+  pool: 5
+  username: admin
+  password: admin
+  host: localhost
