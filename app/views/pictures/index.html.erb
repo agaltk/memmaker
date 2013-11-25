@@ -27,9 +27,15 @@
                 :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
                 :class => 'btn btn-primary' %>
               <% end %>
+<<<<<<< HEAD
               <% if can? :createmem, picture %>
                 <%= link_to "Create mem",
                         createmem_picture_path(picture), :class => 'btn btn-mini btn-info' %>
+=======
+              <% if can? :creategem, picture %>
+                <%= link_to "Create gem",
+                        creategem_picture_path(picture), :class => 'btn btn-mini btn-info' %>
+>>>>>>> 349c17d716b988f25ddac9790b33e1f40a006eb4
               <% end %>
             </div>
           </div>
