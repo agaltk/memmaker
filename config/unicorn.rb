@@ -1,4 +1,4 @@
-root = "/home/aga/apps/memmaker/current"
+root = "/home/aga/memmaker"
 working_directory root
 pid "#{root}/tmp/pids/unicorn.pid"
 stderr_path "#{root}/log/unicorn.log"
@@ -8,7 +8,8 @@ listen "/tmp/unicorn.memmaker.sock"
 worker_processes 2
 timeout 30
 
-
-before_exec do |server|
-  ENV['BUNDLE_GEMFILE'] = '/mnt/Hipstaweb-<%= RUBBER_ENV %>/current/Gemfile'
+# Force the bundler gemfile environment variable to
+# reference the capistrano "current" symlink
+before_exec do |_|
+  ENV["BUNDLE_GEMFILE"] = File.join(root, 'Gemfile')
 end
