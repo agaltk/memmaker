@@ -1,14 +1,9 @@
 Memmaker::Application.routes.draw do
   devise_for :users
   resources :pictures do
-<<<<<<< HEAD
+
     get 'createmem', on: :member
     post 'newmem'
-=======
-    get 'creategem', on: :member
-    post 'newgem'
->>>>>>> 349c17d716b988f25ddac9790b33e1f40a006eb4
-
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
