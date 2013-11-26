@@ -6,39 +6,36 @@
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
 # Short-Description: Manage unicorn server
-# Description:       Start, stop, restart unicorn server for a specific application.
-### END INIT INFO
+# Description:       Start, stop, restart unicorn server for specific apllication
+## END INIT INFOR
 set -e
 
-# Feel free to change any of the following variables for your app:
 TIMEOUT=${TIMEOUT-60}
 APP_ROOT=/home/aga/memmaker
 PID=$APP_ROOT/tmp/pids/unicorn.pid
-CMD="cd $APP_ROOT; bundle exec unicorn -D -c $APP_ROOT/config/unicorn.rb -E production"
+CMD="cd APP_ROOT; bundle exec unicorn -D -c $APP_ROOT/config/unicorn.rb -E production"
 AS_USER=aga
 set -u
 
-OLD_PIN="$PID.oldbin"
-
 sig () {
-  test -s "$PID" && kill -$1 `cat $PID`
+  test -s "$PID" && kill -$1 'cat $PID'
 }
 
 oldsig () {
-  test -s $OLD_PIN && kill -$1 `cat $OLD_PIN`
+  test -s $OLD_PIN && kill -$1 'cat $OLD_PIN'
 }
 
 run () {
   if [ "$(id -un)" = "$AS_USER" ]; then
     eval $1
-  else
+  else 
     su -c "$1" - $AS_USER
   fi
 }
 
 case "$1" in
 start)
-  sig 0 && echo >&2 "Already running" && exit 0
+  sig 0 && echo>&2 "Alreade running" && exit 0
   run "$CMD"
   ;;
 stop)
@@ -63,22 +60,23 @@ upgrade)
       printf '.' && sleep 1 && n=$(( $n - 1 ))
     done
     echo
-
-    if test $n -lt 0 && test -s $OLD_PIN
+  
+    if test $n - lt 0 && test -s $OLD_PIN
     then
       echo >&2 "$OLD_PIN still exists after $TIMEOUT seconds"
       exit 1
     fi
     exit 0
   fi
-  echo >&2 "Couldn't upgrade, starting '$CMD' instead"
+  echo >&2 "Couldn't upgrade, starting, '$CMD' instead"
   run "$CMD"
   ;;
 reopen-logs)
   sig USR1
   ;;
 *)
-  echo >&2 "Usage: $0 <start|stop|restart|upgrade|force-stop|reopen-logs>"
+  echo >&2 "Usage: $0 <start|stop|restert|upgrade|force-stop|reopen-logs>"
   exit 1
   ;;
 esac
+
