@@ -11437,4 +11437,187 @@
 [0;0m[0;31m2013-11-26T18:31:47Z 9710 TID-miod8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
 [0;0m[0;31m2013-11-26T18:32:02Z 9710 TID-miod8 ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
 [0;0m[0;31m2013-11-26T18:32:02Z 9710 TID-miod8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:32:17Z 9710 TID-miod8 ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:32:17Z 9710 TID-miod8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:32:32Z 9710 TID-miod8 ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:32:32Z 9710 TID-miod8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-8sx4c INFO: Received USR1, no longer accepting new work
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Shutting down 25 quiet workers
+[0;0m[0;33m2013-11-26T18:32:44Z 9710 TID-stesg WARN: Unable to clear worker set while shutting down: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:32:44Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;31m2013-11-26T18:32:47Z 9710 TID-miod8 ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:32:47Z 9710 TID-miod8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:33:02Z 9710 TID-miod8 ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:33:02Z 9710 TID-miod8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:33:17Z 9710 TID-miod8 ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:33:17Z 9710 TID-miod8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;32m2013-11-26T18:33:18Z 9710 TID-8sx4c INFO: Shutting down
+[0;0m[0;32m2013-11-26T18:33:18Z 9710 TID-stesg INFO: Shutting down 0 quiet workers
+[0;0m[0;33m2013-11-26T18:33:18Z 9710 TID-stesg WARN: Unable to clear worker set while shutting down: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;32m2013-11-26T18:33:18Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:33:22Z 9710 TID-stesg INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:33:27Z 12581 TID-az1yk INFO: Booting Sidekiq 2.17.0 with redis options {}
+[0;0m[0;32m2013-11-26T18:33:27Z 12581 TID-az1yk INFO: Running in ruby 2.0.0p353 (2013-11-22 revision 43784) [x86_64-linux]
+[0;0m[0;32m2013-11-26T18:33:27Z 12581 TID-az1yk INFO: See LICENSE and the LGPL-3.0 for licensing details.
+[0;0m[0;32m2013-11-26T18:33:27Z 12581 TID-az1yk INFO: Starting processing, hit Ctrl-C to stop
+[0;0m[0;31m2013-11-26T18:33:28Z 12581 TID-p6tm8 ERROR: Error fetching message: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:33:28Z 12581 TID-p6tm8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:33:28Z 12581 TID-p6tm8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:273:in `establish_connection'
+[0;0m[0;31m2013-11-26T18:33:28Z 12581 TID-p6tm8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:69:in `connect'
+[0;0m[0;31m2013-11-26T18:33:28Z 12581 TID-p6tm8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:228:in `with_socket_timeout'
+[0;0m[0;31m2013-11-26T18:33:28Z 12581 TID-p6tm8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:166:in `call_with_timeout'
+[0;0m[0;31m2013-11-26T18:33:28Z 12581 TID-p6tm8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis.rb:1037:in `block in _bpop'
+[0;0m[0;31m2013-11-26T18:33:28Z 12581 TID-p6tm8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis.rb:36:in `block in synchronize'
+[0;0m[0;31m2013-11-26T18:33:28Z 12581 TID-p6tm8 ERROR: /home/aga/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+[0;0m[0;31m2013-11-26T18:33:28Z 12581 TID-p6tm8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis.rb:36:in `synchronize'
+[0;0m[0;31m2013-11-26T18:33:28Z 12581 TID-p6tm8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis.rb:1034:in `_bpop'
+[0;0m[0;31m2013-11-26T18:33:28Z 12581 TID-p6tm8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis.rb:1079:in `brpop'
+[0;0m[0;31m2013-11-26T18:33:28Z 12581 TID-p6tm8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/sidekiq-2.17.0/lib/sidekiq/fetch.rb:89:in `block in retrieve_work'
+[0;0m[0;31m2013-11-26T18:33:28Z 12581 TID-p6tm8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/connection_pool-1.1.0/lib/connection_pool.rb:49:in `with'
+[0;0m[0;31m2013-11-26T18:33:28Z 12581 TID-p6tm8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/sidekiq-2.17.0/lib/sidekiq.rb:67:in `redis'
+[0;0m[0;31m2013-11-26T18:33:28Z 12581 TID-p6tm8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/sidekiq-2.17.0/lib/sidekiq/fetch.rb:89:in `retrieve_work'
+[0;0m[0;31m2013-11-26T18:33:28Z 12581 TID-p6tm8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/sidekiq-2.17.0/lib/sidekiq/fetch.rb:34:in `block in fetch'
+[0;0m[0;31m2013-11-26T18:33:28Z 12581 TID-p6tm8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/sidekiq-2.17.0/lib/sidekiq/util.rb:15:in `watchdog'
+[0;0m[0;31m2013-11-26T18:33:28Z 12581 TID-p6tm8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/sidekiq-2.17.0/lib/sidekiq/fetch.rb:30:in `fetch'
+[0;0m[0;31m2013-11-26T18:33:28Z 12581 TID-p6tm8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/celluloid-0.15.2/lib/celluloid/calls.rb:25:in `public_send'
+[0;0m[0;31m2013-11-26T18:33:28Z 12581 TID-p6tm8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/celluloid-0.15.2/lib/celluloid/calls.rb:25:in `dispatch'
+[0;0m[0;31m2013-11-26T18:33:28Z 12581 TID-p6tm8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/celluloid-0.15.2/lib/celluloid/calls.rb:122:in `dispatch'
+[0;0m[0;31m2013-11-26T18:33:28Z 12581 TID-p6tm8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/celluloid-0.15.2/lib/celluloid/actor.rb:322:in `block in handle_message'
+[0;0m[0;31m2013-11-26T18:33:28Z 12581 TID-p6tm8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/celluloid-0.15.2/lib/celluloid/actor.rb:416:in `block in task'
+[0;0m[0;31m2013-11-26T18:33:28Z 12581 TID-p6tm8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/celluloid-0.15.2/lib/celluloid/tasks.rb:55:in `block in initialize'
+[0;0m[0;31m2013-11-26T18:33:28Z 12581 TID-p6tm8 ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/celluloid-0.15.2/lib/celluloid/tasks/task_fiber.rb:13:in `block in create'
+[0;0m[0;31m2013-11-26T18:33:29Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:33:29Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:33:44Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:33:44Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:33:59Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:33:59Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:34:14Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:34:14Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:34:29Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:34:29Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:34:44Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:34:44Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:34:59Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:34:59Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:35:14Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:35:14Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:35:29Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:35:29Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:35:44Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:35:44Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:35:59Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:35:59Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:36:14Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:36:14Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:36:29Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:36:29Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-az1yk INFO: Received USR1, no longer accepting new work
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Shutting down 25 quiet workers
+[0;0m[0;33m2013-11-26T18:36:32Z 12581 TID-uzh08 WARN: Unable to clear worker set while shutting down: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Pushed 0 messages back to Redis
+[0;0m[0;32m2013-11-26T18:36:32Z 12581 TID-uzh08 INFO: Pushed 0 messages back to Redis
+[0;0m[0;31m2013-11-26T18:36:44Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:36:44Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:36:59Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:36:59Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:37:14Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:37:15Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:37:30Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:37:30Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:37:45Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:37:45Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:38:00Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:38:00Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:38:15Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:38:15Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:38:30Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:38:30Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:38:45Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:38:45Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:39:00Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:39:00Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:39:15Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:39:15Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:39:30Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:39:30Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:39:45Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:39:45Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:40:00Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:40:00Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:40:15Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:40:15Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:40:30Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:40:30Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:40:45Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:40:45Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:41:00Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:41:00Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:41:15Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:41:15Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:41:30Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:41:30Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:41:45Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:41:45Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:42:00Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:42:00Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:42:15Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:42:15Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:42:30Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:42:30Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:42:45Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:42:45Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:43:00Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:43:00Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
+[0;0m[0;31m2013-11-26T18:43:15Z 12581 TID-oobyc ERROR: Error connecting to Redis on 127.0.0.1:6379 (ECONNREFUSED)
+[0;0m[0;31m2013-11-26T18:43:15Z 12581 TID-oobyc ERROR: /home/aga/memmaker/shared/bundle/ruby/2.0.0/gems/redis-3.0.6/lib/redis/client.rb:278:in `rescue in establish_connection'
 [0;0m
