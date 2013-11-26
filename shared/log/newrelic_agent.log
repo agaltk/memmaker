@@ -198,3 +198,5 @@
 [11/26/13 19:33:27 +0100 memtest1 (12581)] INFO : Installing Rails 4 view instrumentation
 [11/26/13 19:33:27 +0100 memtest1 (12581)] INFO : Finished instrumentation
 [11/26/13 19:33:28 +0100 memtest1 (12581)] INFO : Reporting to: https://rpm.newrelic.com/accounts/361304/applications/2876673
+[11/26/13 19:47:29 +0100 memtest1 (12581)] INFO : Failed to send timeslice data, trying again later. Error:
+[11/26/13 19:47:29 +0100 memtest1 (12581)] INFO : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-8.newrelic.com:443: Connection reset by peer
