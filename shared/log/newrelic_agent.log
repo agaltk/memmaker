@@ -58,3 +58,42 @@
 [11/25/13 23:51:02 +0100 memtest1 (2590)] INFO : Installing Rails 4 view instrumentation
 [11/25/13 23:51:02 +0100 memtest1 (2590)] INFO : Finished instrumentation
 [11/25/13 23:51:04 +0100 memtest1 (2590)] INFO : Reporting to: https://rpm.newrelic.com/accounts/361304/applications/2876673
+[11/26/13 15:37:51 +0100 memtest1 (21261)] INFO : Starting the New Relic agent in "production" environment.
+[11/26/13 15:37:51 +0100 memtest1 (21261)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "production" section of your newrelic.yml.
+[11/26/13 15:37:51 +0100 memtest1 (21261)] INFO : Reading configuration from config/newrelic.yml
+[11/26/13 15:37:51 +0100 memtest1 (21261)] INFO : Enabling the Request Sampler.
+[11/26/13 15:37:51 +0100 memtest1 (21261)] INFO : Enabling the Request Sampler.
+[11/26/13 15:37:51 +0100 memtest1 (21261)] INFO : Environment: production
+[11/26/13 15:37:51 +0100 memtest1 (21261)] INFO : Dispatcher: sidekiq
+[11/26/13 15:37:51 +0100 memtest1 (21261)] INFO : Application: My Application
+[11/26/13 15:37:51 +0100 memtest1 (21261)] INFO : Installing Sidekiq instrumentation
+[11/26/13 15:37:51 +0100 memtest1 (21261)] INFO : Installing Net instrumentation
+[11/26/13 15:37:51 +0100 memtest1 (21261)] INFO : Installing Unicorn instrumentation
+[11/26/13 15:37:51 +0100 memtest1 (21261)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[11/26/13 15:37:51 +0100 memtest1 (21261)] INFO : Installing ActiveRecord 4 instrumentation
+[11/26/13 15:37:51 +0100 memtest1 (21261)] INFO : Installing deferred Rack instrumentation
+[11/26/13 15:37:51 +0100 memtest1 (21261)] INFO : Installing Rails4 Error instrumentation
+[11/26/13 15:37:51 +0100 memtest1 (21261)] INFO : Installing Rails 4 Controller instrumentation
+[11/26/13 15:37:51 +0100 memtest1 (21261)] INFO : Installing Rails 4 view instrumentation
+[11/26/13 15:37:51 +0100 memtest1 (21261)] INFO : Finished instrumentation
+[11/26/13 15:37:52 +0100 memtest1 (21261)] INFO : Reporting to: https://rpm.newrelic.com/accounts/361304/applications/2876673
+[11/26/13 15:40:35 +0100 memtest1 (21261)] INFO : Starting Agent shutdown
+[11/26/13 15:40:41 +0100 memtest1 (23868)] INFO : Starting the New Relic agent in "production" environment.
+[11/26/13 15:40:41 +0100 memtest1 (23868)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "production" section of your newrelic.yml.
+[11/26/13 15:40:41 +0100 memtest1 (23868)] INFO : Reading configuration from config/newrelic.yml
+[11/26/13 15:40:41 +0100 memtest1 (23868)] INFO : Enabling the Request Sampler.
+[11/26/13 15:40:41 +0100 memtest1 (23868)] INFO : Enabling the Request Sampler.
+[11/26/13 15:40:41 +0100 memtest1 (23868)] INFO : Environment: production
+[11/26/13 15:40:41 +0100 memtest1 (23868)] INFO : Dispatcher: sidekiq
+[11/26/13 15:40:41 +0100 memtest1 (23868)] INFO : Application: My Application
+[11/26/13 15:40:41 +0100 memtest1 (23868)] INFO : Installing Sidekiq instrumentation
+[11/26/13 15:40:41 +0100 memtest1 (23868)] INFO : Installing Net instrumentation
+[11/26/13 15:40:41 +0100 memtest1 (23868)] INFO : Installing Unicorn instrumentation
+[11/26/13 15:40:41 +0100 memtest1 (23868)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[11/26/13 15:40:41 +0100 memtest1 (23868)] INFO : Installing ActiveRecord 4 instrumentation
+[11/26/13 15:40:41 +0100 memtest1 (23868)] INFO : Installing deferred Rack instrumentation
+[11/26/13 15:40:41 +0100 memtest1 (23868)] INFO : Installing Rails4 Error instrumentation
+[11/26/13 15:40:41 +0100 memtest1 (23868)] INFO : Installing Rails 4 Controller instrumentation
+[11/26/13 15:40:41 +0100 memtest1 (23868)] INFO : Installing Rails 4 view instrumentation
+[11/26/13 15:40:41 +0100 memtest1 (23868)] INFO : Finished instrumentation
+[11/26/13 15:40:43 +0100 memtest1 (23868)] INFO : Reporting to: https://rpm.newrelic.com/accounts/361304/applications/2876673

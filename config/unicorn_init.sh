@@ -17,6 +17,8 @@ CMD="cd $APP_ROOT; bundle exec unicorn -D -c $APP_ROOT/config/unicorn.rb -E prod
 AS_USER=aga
 set -u
 
+OLD_PID="$PID.oldbin"
+
 sig () {
   test -s "$PID" && kill -$1 'cat $PID'
 }
