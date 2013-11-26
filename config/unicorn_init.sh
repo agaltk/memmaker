@@ -5,7 +5,7 @@ set -e
 
 # Feel free to change any of the following variables for your app:
 TIMEOUT=${TIMEOUT-60}
-APP_ROOT=/home/aga/memmaker/current
+APP_ROOT=/home/aga/memmaker
 PID=$APP_ROOT/tmp/pids/unicorn.pid
 CMD="/usr/bin/unicorn -D -c $APP_ROOT/config/unicorn.rb"
 INIT_CONF=$APP_ROOT/config/init.conf
