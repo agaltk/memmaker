@@ -6,7 +6,6 @@ server "10.10.60.156", :web, :app, :db, primary: true
 
 set :application, "memmaker"
 set :user, "deployer"
-set :port, 1026
 set :deploy_to, "/home/#{user}/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
