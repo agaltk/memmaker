@@ -19,7 +19,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: mem_production
+  database: mem_production2
   pool: 5
   username: admin
   password: admin

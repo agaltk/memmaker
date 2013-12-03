@@ -28,11 +28,7 @@ class Picture < ActiveRecord::Base
 
     memimage = MemimageUploader.new
     memimage.cache!(File.open('temp.png'))
-<<<<<<< HEAD
-    pg =  Picturemem.create(title: my_text, memimage: memimage)
-=======
     pg =  Picturemem.create(title: my_text, memimage: memimage, user_id: userid)
->>>>>>> 1ed6e2296135787ce872a7e24b9d9f0c531e1e4a
     self.picturemems << pg
     self.save
     pg
