@@ -5,9 +5,9 @@ class Picture < ActiveRecord::Base
   scope :not_private, -> { where(private: false) }
 
   
-  def createmem(text='Default text')
 
-	  img = self.image.file.file
+  def createmem(text='Default text',userid)
+    img = self.image.file.file
     font_size = 25
     img = Magick::Image.read(img).first
     my_text = text
@@ -28,7 +28,11 @@ class Picture < ActiveRecord::Base
 
     memimage = MemimageUploader.new
     memimage.cache!(File.open('temp.png'))
+<<<<<<< HEAD
     pg =  Picturemem.create(title: my_text, memimage: memimage)
+=======
+    pg =  Picturemem.create(title: my_text, memimage: memimage, user_id: userid)
+>>>>>>> 1ed6e2296135787ce872a7e24b9d9f0c531e1e4a
     self.picturemems << pg
     self.save
     pg

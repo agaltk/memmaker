@@ -71,7 +71,8 @@ class PicturesController < ApplicationController
   def newmem
     @picture = Picture.find(params[:picture_id])
     text = params[:newmem][:text]
-    @newmem = @picture.createmem(text)
+    user_id = current_user.id
+    @newmem = @picture.createmem(text,user_id)
   end
 
   def show_mems
