@@ -12,7 +12,7 @@ set :deploy_via, :remote_cache
 set :use_sudo, false
 
 set :scm, "git"
-set :repository, "origin git@gitlab.com:Lutak/memmaker.git"
+set :repository, "origin git@github.com:agulek91/memmaker.git"
 set :branch, "master"
 
 default_run_options[:pty] = true
@@ -51,47 +51,4 @@ namespace :deploy do
     end
   end
   before "deploy", "deploy:check_revision"
-end
-
-after "deploy:finalize_update", "gitlab:link"
-
-namespace :gitshell do
-
-  task :install do
-    run "cd /home/git && git clone https://github.com/gitlabhq/gitlab-shell.git"
-    run "cd /home/git/gitlab-shell && git checkout v1.7.0"
-    upload "gitlab-shell.yml", "/home/git/gitlab-shell/config.yml"
-    run "cd /home/git/gitlab-shell && ./bin/install"
-  end
-
-end
-
-namespace :gitlab do
-
-  desc "Install gitshell and configure gitlab."
-  task :prepare do
-    gitshell.install
-    gitlab.configure
-  end
-
-  desc "Upload gitlab.yml and create gitlabl satellites directory."
-  task :configure do
-    upload "gitlab.yml", "/u/apps/#{application}/shared/config"
-    run "cd /home/git && mkdir -p gitlab-satellites"
-  end
-
-  task :link do
-    run "#{try_sudo} ln -nfs #{shared_path}/config/gitlab.yml #{release_path}/config/gitlab.yml"
-  end
-
-  desc "Executes bundle exec  rake gitlab:setup."
-  task :setup do
-    run "cd #{current_path} && bundle exec rake gitlab:setup RAILS_ENV=production force=yes"
-  end
-
-  desc "Backs up your gitlab"
-  task :backup do
-    run "cd #{current_path} && bundle exec rake gitlab:backup:create RAILS_ENV=production"
-  end
-
 end
