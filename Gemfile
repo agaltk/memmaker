@@ -40,7 +40,7 @@ group :development, :test do
 	gem 'rspec', '~> 2.14.1'
 end
 
-gem 'intercity-gitlab'
+gem 'intercity'
 gem 'simple_form'
 gem 'carrierwave'
 gem 'mini_magick'
