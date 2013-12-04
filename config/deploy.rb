@@ -11,7 +11,7 @@ set :deploy_via, :remote_cache
 set :use_sudo, false
 
 set :scm, "git"
-set :repository, "origin git@github.com:agulek91/memmaker.git"
+set :repository, "git@github.com:agulek91/#{application}.git"
 set :branch, "master"
 
 default_run_options[:pty] = true
