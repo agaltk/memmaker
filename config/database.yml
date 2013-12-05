@@ -1,7 +1,7 @@
 production:
   adapter: postgresql
   encoding: unicode
-  database: mem_production3
+  database: mem_production
   pool: 5
   username: admin
   password: admin
