@@ -1,25 +1,7 @@
-development:
-  adapter: postgresql
-  encoding: unicode
-  database: mem_development
-  pool: 5
-  username: admin
-  password: admin
-  host: localhost
-
-test:
-  adapter: postgresql
-  encoding: unicode
-  database: mem_test
-  pool: 5
-  username: admin
-  password: admin
-  host: localhost
-
 production:
   adapter: postgresql
   encoding: unicode
-  database: mem_production
+  database: mem_production3
   pool: 5
   username: admin
   password: admin

@@ -1,7 +1,6 @@
 require "bundler/capistrano"
 require "rvm/capistrano"
 require 'sidekiq/capistrano'
-require 'intercity/capistrano'
 
 server "10.10.60.156", :web, :app, :db, primary: true
 
@@ -12,7 +11,7 @@ set :deploy_via, :remote_cache
 set :use_sudo, false
 
 set :scm, "git"
-set :repository, "origin git@github.com:agulek91/memmaker.git"
+set :repository, "git@github.com:agulek91/#{application}.git"
 set :branch, "master"
 
 default_run_options[:pty] = true
@@ -52,3 +51,4 @@ namespace :deploy do
   end
   before "deploy", "deploy:check_revision"
 end
+

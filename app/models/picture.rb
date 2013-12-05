@@ -5,9 +5,9 @@ class Picture < ActiveRecord::Base
   scope :not_private, -> { where(private: false) }
 
   
-  def createmem(text='Default text',userid)
 
-	  img = self.image.file.file
+  def createmem(text='Default text',userid)
+    img = self.image.file.file
     font_size = 25
     img = Magick::Image.read(img).first
     my_text = text

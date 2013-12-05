@@ -6,7 +6,8 @@
       <%= simple_form_for :newmem, :url => '/pictures/'+@picture.id.to_s+'/newmem', :html => { :class => 'form-horizontal' } do |f| %>
         <fieldset>
           <%= image_tag(@picture.image.thumb)%>
-          <legend>Create mem</legend>z
+
+          <legend>Create mem</legend>
           <div class="form-group col-lg-12">
          	<%= f.input :text, :input_html => {:class =>"form-control"} %>
           </div>
