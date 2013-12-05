@@ -44,7 +44,7 @@ class Picture < ActiveRecord::Base
       @pictures = Picture.user_pictures(current_user)
    
     else
-      @pictures = Picture.not_private   
+      @pictures = Picture.all
    
     end
   
