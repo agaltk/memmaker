@@ -5,9 +5,9 @@ class Picture < ActiveRecord::Base
   scope :not_private, -> { where(private: false) }
 
   
-
   def createmem(text='Default text',userid)
-    img = self.image.file.file
+
+	  img = self.image.file.file
     font_size = 25
     img = Magick::Image.read(img).first
     my_text = text
@@ -23,11 +23,11 @@ class Picture < ActiveRecord::Base
     copyright.gravity = Magick::SouthGravity
     
     copyright.annotate(img, 0, 0, 2, 5, my_text)
-    
-    img.write('temp.png')
+    path = 'tmp/uploads/mem'+ Random.new(1234).rand(1..9999999).to_s+'.png'
+    img.write(path)
 
     memimage = MemimageUploader.new
-    memimage.cache!(File.open('temp.png'))
+    memimage.cache!(File.open(path))
     pg =  Picturemem.create(title: my_text, memimage: memimage, user_id: userid)
     self.picturemems << pg
     self.save
@@ -45,7 +45,6 @@ class Picture < ActiveRecord::Base
    
     else
       @pictures = Picture.all
-   
     end
   
     @pictures
