@@ -28,7 +28,6 @@ class PicturesController < ApplicationController
   # POST /pictures.json
   def create
     @picture = Picture.new(picture_params)
-    binding.pry
     @picture.user_id = current_user.id
     @picture.added = Date.today
     respond_to do |format|
