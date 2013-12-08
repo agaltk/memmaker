@@ -20,7 +20,6 @@ ssh_options[:forward_agent] = true
 after 'deploy:update_code', 'deploy:migrate'
 after 'deploy:update', 'deploy:symlink_attachments'
 after 'deploy:update', 'deploy:symlink_tmp'
-after 'deploy:update', 'deploy:clear_caches'
 after 'deploy:update', 'deploy:cleanup'
 
 # Run rake tasks
@@ -57,8 +56,5 @@ namespace :deploy do
     run "chmod 775 #{shared_path}/tmp"
   end
 
-  task :clear_caches do
-    run "echo 'flush_all' | nc 10.10.60.156 80" # memcached
-    run_rake "tmp:cache:clear >/dev/null 2>&1"
-  end
+  
 end
