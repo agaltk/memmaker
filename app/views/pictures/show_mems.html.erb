@@ -1,4 +1,6 @@
+
 <div class="container">
+	<%= will_paginate @mems %>
   <div class="row">
     <% @mems.each do |memm| %>
       <div class= "col-md-4">
@@ -8,5 +10,6 @@
       </div>
     <%end%>        
   </div>
+
 </div>
 

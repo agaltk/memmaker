@@ -48,6 +48,7 @@ gem 'pry-rails', :group => :development
 gem 'devise'
 gem 'cancan'
 gem 'newrelic_rpm'
+gem "will_paginate", "~> 3.0.5"
 gem 'pg'
 gem 'therubyracer'
 gem 'puma'#unicorn'#puma'

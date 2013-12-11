@@ -2,11 +2,12 @@ class PicturesController < ApplicationController
   before_action :set_picture, only: [:show, :edit, :update, :destroy]
   require 'RMagick'
   include Magick
+  PER_PAGE = 12
 
   # GET /pictures
   # GET /pictures.json
   def index
-    @pictures = Picture.show_pictures(params[:type],current_user)
+    @pictures = Picture.show_pictures(params[:type],current_user).paginate(:page => params[:page], :per_page => PER_PAGE)
   end
 
   # GET /pictures/1
@@ -76,7 +77,7 @@ class PicturesController < ApplicationController
   end
 
   def show_mems
-    @mems = Picturemem.show_mems(params[:type],current_user)  
+    @mems = Picturemem.show_mems(params[:type],current_user).paginate(:page => params[:page], :per_page => PER_PAGE)
   end
 
 

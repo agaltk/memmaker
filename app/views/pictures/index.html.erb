@@ -3,7 +3,9 @@
             :class => 'btn btn-primary' %>
 <br />
 <br />
+<%= will_paginate @pictures %>
 <div class="row">
+  
   <% @pictures.each do |picture| %>
     <div class="col-sm-6 col-md-6">
       <div class="thumbnail">
