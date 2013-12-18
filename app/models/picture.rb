@@ -35,7 +35,7 @@ class Picture < ActiveRecord::Base
   end
 
   def self.user_pictures(user)
-    where(user_id: user.id)
+    where(user_id: user.id).order(created_at :desc)
   end
 
   def self.show_pictures(type,current_user)
@@ -44,7 +44,7 @@ class Picture < ActiveRecord::Base
       @pictures = Picture.user_pictures(current_user)
    
     else
-      @pictures = Picture.all
+      @pictures = Picture.all.order(created_at :desc)
     end
   
     @pictures
