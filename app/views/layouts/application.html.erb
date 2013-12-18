@@ -32,17 +32,17 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="<%= 'active' if current_page?(show_mems_path(:type => 'all')) %>">
-               <%= link_to 'Home', show_mems_path(:type => 'all') %></a>
+               <%= link_to 'Strona domowa', show_mems_path(:type => 'all') %></a>
             </li>
             <% if user_signed_in?%>
               <li class="<%= 'active' if current_page?(pictures_path) %>">
-               <%= link_to 'All pictures', pictures_path %>
+               <%= link_to 'Wszystkie obrazki', pictures_path %>
               </li>
               <li class="<%= 'active' if current_page?(show_pictures_path(:type => 'my')) %>">
-               <%= link_to 'My pictures', show_pictures_path(:type => 'my') %>
+               <%= link_to 'Moje obrazki', show_pictures_path(:type => 'my') %>
               </li>
               <li class="<%= 'active' if current_page?(show_mems_path(:type => 'my')) %>">
-               <%= link_to 'My mems', show_mems_path(:type => 'my')%>
+               <%= link_to 'Moje memy', show_mems_path(:type => 'my')%>
               </li>
               <li class="<%= 'active' if current_page?(destroy_user_session_path) %>">
                <%= link_to "Wyloguj", destroy_user_session_path, :method => :delete, :class=>"small button"%>
@@ -66,7 +66,7 @@
     <div class="container theme-showcase">
 
       <div class="jumbotron">
-        <h1>Welcome into memmaker :)</h1>
+        <h1> Mem maker</h1>
   
       </div>
 
