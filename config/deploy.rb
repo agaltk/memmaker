@@ -31,7 +31,7 @@ end
 
 namespace :puma do
   task :start, :except => { :no_release => true } do
-    run "sudo /etc/init.d/puma start #{application}"
+    run "/etc/init.d/puma start #{application}"
   end
   after "deploy:start", "puma:start"
 
