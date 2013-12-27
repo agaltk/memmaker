@@ -18,44 +18,41 @@ set :branch, "master"
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 
-after 'deploy:update_code', 'deploy:migrate'
-after 'deploy:update', 'deploy:symlink_attachments'
-after 'deploy:update', 'deploy:symlink_tmp'
-after 'deploy:update', 'deploy:cleanup'
-
-# Run rake tasks
-def run_rake(task, options={}, &block)
-  command = "cd #{latest_release} && #{bundle_cmd} rake #{task}"
-  run(command, options, &block)
-end
-
-namespace :puma do
-  task :start, :except => { :no_release => true } do
-    run "/etc/init.d/puma start #{application}"
-  end
-  after "deploy:start", "puma:start"
-
-  task :stop, :except => { :no_release => true } do
-    run "/etc/init.d/puma stop #{application}"
-  end
-  after "deploy:stop", "puma:stop"
-
-  task :restart, roles: :app do
-    run "/etc/init.d/puma restart #{application}"
-  end
-  after "deploy:restart", "puma:restart"
-end
-
+after "deploy", "deploy:cleanup" # keep only the last 5 releases
+ 
 namespace :deploy do
-  task :symlink_attachments do
-    run "ln -nfs #{shared_path}/attachments #{release_path}/public/attachments"
-  end
-
-  task :symlink_tmp do
-    run "rm -rf #{release_path}/tmp"
-    run "ln -nfs #{shared_path}/tmp #{release_path}/tmp"
-    run "chmod 775 #{shared_path}/tmp"
-  end
-
-  
+%w[start stop restart].each do |command|
+desc "#{command} puma server"
+task command, roles: :app, except: {no_release: true} do
+run "/etc/init.d/puma #{command}"
+end
+end
+task :setup_config, roles: :app do
+sudo "ln -nfs #{current_path}/config/nginx.conf /etc/nginx/sites-enabled/#{application}"
+sudo "ln -nfs #{current_path}/config/puma_init.sh /etc/init.d/puma"
+sudo "chmod +x /etc/init.d/puma"
+ 
+run "mkdir -p #{shared_path}/config"
+run "mkdir -p #{shared_path}/sockets"
+run "mkdir -p #{shared_path}/pids"
+put File.read("config/database.example.yml"), "#{shared_path}/config/database.yml"
+puts "Now edit the config files in #{shared_path}."
+end
+after "deploy:setup", "deploy:setup_config"
+ 
+task :symlink_config, roles: :app do
+run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
+run "ln -nfs #{shared_path}/config/puma.rb #{release_path}/config/puma.rb"
+end
+after "deploy:finalize_update", "deploy:symlink_config"
+ 
+desc "Make sure local git is in sync with remote."
+task :check_revision, roles: :web do
+unless `git rev-parse HEAD` == `git rev-parse bitbucket/#{branch}`
+puts "WARNING: HEAD is not the same as bitbucket/#{branch}"
+puts "Run `git push` to sync changes."
+exit
+end
+end
+before "deploy", "deploy:check_revision"
 end
