@@ -3,7 +3,7 @@ require "rvm/capistrano"
 require 'sidekiq/capistrano'
 require 'puma/capistrano'
 
-server "10.10.60.157", :web, :app, :db, primary: true
+server "10.10.60.156", :web, :app, :db, primary: true
 
 set :application, "memmaker"
 set :user, "deployer"
