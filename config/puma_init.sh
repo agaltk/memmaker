@@ -14,7 +14,7 @@ set -e
 APP_ROOT=/home/deployer/memmaker/
 CMD="cd $APP_ROOT/current; bundle exec puma -C $APP_ROOT/shared/config/puma.rb -b unix://$APP_ROOT/shared/sockets/puma.sock -e production --control unix://$APP_ROOT/shared/sockets/pumactl.sock --state $APP_ROOT/shared/sockets/puma.state --pidfile $APP_ROOT/shared/pids/puma.pid 2>&1 >> $APP_ROOT/shared/log/puma.log &"
 CTL="cd $APP_ROOT/current; bundle exec pumactl -S $APP_ROOT/shared/sockets/puma.state"
-AS_USER=<user>
+AS_USER=deployer
 set -u
  
 run () {
