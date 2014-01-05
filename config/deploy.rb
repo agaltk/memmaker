@@ -54,5 +54,5 @@ puts "Run `git push` to sync changes."
 exit
 end
 end
-#before "deploy", "deploy:check_revision"
+before "deploy", "deploy:check_revision"
 end
