@@ -7,7 +7,6 @@
 <div class="row">
   
   <% @pictures.each do |picture| %>
-    <% cache picture do %>
     <div class="col-sm-6 col-md-6">
       <div class="thumbnail">
         <h3 ><%= picture.title %> <small>(<%= picture.added %>)</small></h3>
@@ -40,7 +39,6 @@
         </div>
       </div>
     </div>
-    <% end %>
   <% end %>
 </div>
 

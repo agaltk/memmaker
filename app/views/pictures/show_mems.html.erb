@@ -3,13 +3,11 @@
 	<%= will_paginate @mems %>
   <div class="row">
     <% @mems.each do |memm| %>
-     <% cache memm do %>
       <div class= "col-md-4">
         <div class="thumbnail">
           <%= image_tag memm.memimage_url, :class => "img-rounded" %>
         </div>
       </div>
-      <% end %>
     <%end%>        
   </div>
 
