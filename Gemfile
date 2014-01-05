@@ -51,7 +51,12 @@ gem 'newrelic_rpm'
 gem "will_paginate", "~> 3.0.5"
 gem 'pg'
 gem 'therubyracer'
-gem 'unicorn'#puma'
+
+gem 'puma'
+
+gem 'capistrano-puma'
+
+
 gem 'ruby-jmeter'
 gem 'capistrano', '~> 2.15.5'
 gem 'rvm-capistrano'
