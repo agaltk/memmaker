@@ -30,7 +30,7 @@ end
 task :setup_config, roles: :app do
 sudo "ln -nfs #{current_path}/config/nginx.conf /etc/nginx/sites-enabled/#{application}"
 sudo "ln -nfs #{current_path}/config/puma_init.sh /etc/init.d/puma"
-sudo "chmod +x /etc/init.d/puma"
+
  
 run "mkdir -p #{shared_path}/config"
 run "mkdir -p #{shared_path}/sockets"
